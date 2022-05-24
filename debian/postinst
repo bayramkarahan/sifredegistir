@@ -1,0 +1,3 @@
+#!/bin/sh
+chown root:root /usr/share/sifredegistir/passwordyetki
+chmod a+s /usr/share/sifredegistir/passwordyetki

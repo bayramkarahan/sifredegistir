@@ -1,0 +1,13 @@
+[Desktop Entry]
+Version=1.0
+Name=SifreDegistir Application
+Name[tr]=Şifre Değiştirme Uygulaması
+Type=Application
+Comment=Simple Qt based Password Changer Application
+Comment[tr]=Basit Qt tabanlı Şifre Değiştirme Uygulaması
+Terminal=false
+Exec=/usr/bin/sifredegistir
+Icon=/usr/share/sifredegistir/password.svg
+Categories=Qt;Util;
+Keywords=password;change;
+GenericName=SifreDegistir

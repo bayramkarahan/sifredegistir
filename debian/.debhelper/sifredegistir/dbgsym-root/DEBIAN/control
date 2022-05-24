@@ -1,0 +1,12 @@
+Package: sifredegistir-dbgsym
+Source: sifredegistir
+Version: 1.0.0
+Auto-Built-Package: debug-symbols
+Architecture: amd64
+Maintainer: Bayram KARAHAN <bayramk@gmail.com>
+Installed-Size: 509
+Depends: sifredegistir (= 1.0.0)
+Section: debug
+Priority: optional
+Description: debug symbols for sifredegistir
+Build-Ids: 17071f05dba34d98a744abf8b1b2c4bf9c829f2c 5d87ee731c0a1699e7b319a9a1ab5de4533cc66f
