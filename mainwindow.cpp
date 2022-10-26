@@ -28,7 +28,9 @@ MainWindow::MainWindow(QWidget *parent) :
     //sifre->setStyleSheet("background-color: #df00ff;");
     /********************************************************/
     QString username;
-    username = qgetenv("USER"); // get the user name in Linux
+    ///username = qgetenv("USER"); // get the user name in Linux
+    username = qgetenv("HOME"); // get the home directory in Linux
+    username=username.split("/")[2];
     if(username.isEmpty()) {
         username = qgetenv("USERNAME"); // get the name in Windows
     }
@@ -101,6 +103,9 @@ MainWindow::MainWindow(QWidget *parent) :
             QString kmt="/usr/share/sifredegistir/passwordyetki "+username+" "+passwordLineEdit->text();
            // qDebug()<<kmt;
             system(kmt.toStdString().c_str());
+            QString kmt1="touch /home/"+username+".config/np";
+           // qDebug()<<kmt1;
+            system(kmt1.toStdString().c_str());
 
         }
     });

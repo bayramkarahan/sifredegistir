@@ -39,12 +39,19 @@ desktop_file.files = sifredegistir.desktop
 desktop_file.path = /usr/share/applications/
 
 icon.files = icons/password.svg
-icon.path = /usr/share/sifredegistir
+icon.path = /usr/share/icons
 
 passwordyetki.files = passwordyetki
 passwordyetki.path = /usr/share/sifredegistir
 
-INSTALLS += target desktop_file icon passwordyetki
+desktop_xdg.files = newpassword.desktop
+desktop_xdg.path = /etc/xdg/autostart/
+
+desktop_xdg_link.files = newpassword.sh
+desktop_xdg_link.path = /usr/bin/
+
+
+INSTALLS += target desktop_file icon passwordyetki desktop_xdg desktop_xdg_link
 DISTFILES += \
        sifredegistir.desktop\
        passwordyetki
