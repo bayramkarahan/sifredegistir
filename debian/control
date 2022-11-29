@@ -10,7 +10,8 @@ Build-Depends: debhelper (>= 9),
     libqt5core5a,
     libqt5gui5,
     libstdc++6,
-    qtdeclarative5-dev
+    qtdeclarative5-dev,
+    libnotify-bin
 Standards-Version: 3.9.8
 Homepage: http://pardus.org.tr
 
@@ -21,5 +22,6 @@ Depends: ${shlibs:Depends}, ${misc:Depends},
     	libqt5gui5,
     	libqt5svg5-dev,
     	libqt5widgets5,
-    	libstdc++6
+    	libstdc++6,
+    	libnotify-bin
 Description: SifreDegistir Uygulaması

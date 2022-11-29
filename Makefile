@@ -37,7 +37,7 @@ MOVE          = mv -f
 TAR           = tar -cf
 COMPRESS      = gzip -9f
 DISTNAME      = sifredegistir1.0.0
-DISTDIR = /home/by/Masaüstü/sifredegistir/.tmp/sifredegistir1.0.0
+DISTDIR = /home/etapadmin/Masaüstü/sifredegistir/.tmp/sifredegistir1.0.0
 LINK          = g++
 LFLAGS        = -Wl,-O1
 LIBS          = $(SUBLIBS) /usr/lib/x86_64-linux-gnu/libQt5Widgets.so /usr/lib/x86_64-linux-gnu/libQt5Gui.so /usr/lib/x86_64-linux-gnu/libQt5Core.so -lGL -lpthread   
@@ -92,9 +92,10 @@ DIST          = sifredegistir.desktop \
 		/usr/lib/x86_64-linux-gnu/qt5/mkspecs/modules/qt_lib_input_support_private.pri \
 		/usr/lib/x86_64-linux-gnu/qt5/mkspecs/modules/qt_lib_kms_support_private.pri \
 		/usr/lib/x86_64-linux-gnu/qt5/mkspecs/modules/qt_lib_linuxaccessibility_support_private.pri \
+		/usr/lib/x86_64-linux-gnu/qt5/mkspecs/modules/qt_lib_multimedia.pri \
+		/usr/lib/x86_64-linux-gnu/qt5/mkspecs/modules/qt_lib_multimediawidgets.pri \
 		/usr/lib/x86_64-linux-gnu/qt5/mkspecs/modules/qt_lib_network.pri \
 		/usr/lib/x86_64-linux-gnu/qt5/mkspecs/modules/qt_lib_network_private.pri \
-		/usr/lib/x86_64-linux-gnu/qt5/mkspecs/modules/qt_lib_opengl.pri \
 		/usr/lib/x86_64-linux-gnu/qt5/mkspecs/modules/qt_lib_opengl_private.pri \
 		/usr/lib/x86_64-linux-gnu/qt5/mkspecs/modules/qt_lib_openglextensions.pri \
 		/usr/lib/x86_64-linux-gnu/qt5/mkspecs/modules/qt_lib_openglextensions_private.pri \
@@ -188,9 +189,10 @@ Makefile: sifredegistir.pro /usr/lib/x86_64-linux-gnu/qt5/mkspecs/linux-g++/qmak
 		/usr/lib/x86_64-linux-gnu/qt5/mkspecs/modules/qt_lib_input_support_private.pri \
 		/usr/lib/x86_64-linux-gnu/qt5/mkspecs/modules/qt_lib_kms_support_private.pri \
 		/usr/lib/x86_64-linux-gnu/qt5/mkspecs/modules/qt_lib_linuxaccessibility_support_private.pri \
+		/usr/lib/x86_64-linux-gnu/qt5/mkspecs/modules/qt_lib_multimedia.pri \
+		/usr/lib/x86_64-linux-gnu/qt5/mkspecs/modules/qt_lib_multimediawidgets.pri \
 		/usr/lib/x86_64-linux-gnu/qt5/mkspecs/modules/qt_lib_network.pri \
 		/usr/lib/x86_64-linux-gnu/qt5/mkspecs/modules/qt_lib_network_private.pri \
-		/usr/lib/x86_64-linux-gnu/qt5/mkspecs/modules/qt_lib_opengl.pri \
 		/usr/lib/x86_64-linux-gnu/qt5/mkspecs/modules/qt_lib_opengl_private.pri \
 		/usr/lib/x86_64-linux-gnu/qt5/mkspecs/modules/qt_lib_openglextensions.pri \
 		/usr/lib/x86_64-linux-gnu/qt5/mkspecs/modules/qt_lib_openglextensions_private.pri \
@@ -274,9 +276,10 @@ Makefile: sifredegistir.pro /usr/lib/x86_64-linux-gnu/qt5/mkspecs/linux-g++/qmak
 /usr/lib/x86_64-linux-gnu/qt5/mkspecs/modules/qt_lib_input_support_private.pri:
 /usr/lib/x86_64-linux-gnu/qt5/mkspecs/modules/qt_lib_kms_support_private.pri:
 /usr/lib/x86_64-linux-gnu/qt5/mkspecs/modules/qt_lib_linuxaccessibility_support_private.pri:
+/usr/lib/x86_64-linux-gnu/qt5/mkspecs/modules/qt_lib_multimedia.pri:
+/usr/lib/x86_64-linux-gnu/qt5/mkspecs/modules/qt_lib_multimediawidgets.pri:
 /usr/lib/x86_64-linux-gnu/qt5/mkspecs/modules/qt_lib_network.pri:
 /usr/lib/x86_64-linux-gnu/qt5/mkspecs/modules/qt_lib_network_private.pri:
-/usr/lib/x86_64-linux-gnu/qt5/mkspecs/modules/qt_lib_opengl.pri:
 /usr/lib/x86_64-linux-gnu/qt5/mkspecs/modules/qt_lib_opengl_private.pri:
 /usr/lib/x86_64-linux-gnu/qt5/mkspecs/modules/qt_lib_openglextensions.pri:
 /usr/lib/x86_64-linux-gnu/qt5/mkspecs/modules/qt_lib_openglextensions_private.pri:
@@ -395,7 +398,7 @@ compiler_moc_header_clean:
 moc_mainwindow.cpp: mainwindow.h \
 		moc_predefs.h \
 		/usr/lib/qt5/bin/moc
-	/usr/lib/qt5/bin/moc $(DEFINES) --include /home/by/Masaüstü/sifredegistir/moc_predefs.h -I/usr/lib/x86_64-linux-gnu/qt5/mkspecs/linux-g++ -I/home/by/Masaüstü/sifredegistir -I/usr/include/x86_64-linux-gnu/qt5 -I/usr/include/x86_64-linux-gnu/qt5/QtWidgets -I/usr/include/x86_64-linux-gnu/qt5/QtGui -I/usr/include/x86_64-linux-gnu/qt5/QtCore -I/usr/include/c++/10 -I/usr/include/x86_64-linux-gnu/c++/10 -I/usr/include/c++/10/backward -I/usr/lib/gcc/x86_64-linux-gnu/10/include -I/usr/local/include -I/usr/include/x86_64-linux-gnu -I/usr/include mainwindow.h -o moc_mainwindow.cpp
+	/usr/lib/qt5/bin/moc $(DEFINES) --include /home/etapadmin/Masaüstü/sifredegistir/moc_predefs.h -I/usr/lib/x86_64-linux-gnu/qt5/mkspecs/linux-g++ -I/home/etapadmin/Masaüstü/sifredegistir -I/usr/include/x86_64-linux-gnu/qt5 -I/usr/include/x86_64-linux-gnu/qt5/QtWidgets -I/usr/include/x86_64-linux-gnu/qt5/QtGui -I/usr/include/x86_64-linux-gnu/qt5/QtCore -I/usr/include/c++/10 -I/usr/include/x86_64-linux-gnu/c++/10 -I/usr/include/c++/10/backward -I/usr/lib/gcc/x86_64-linux-gnu/10/include -I/usr/local/include -I/usr/include/x86_64-linux-gnu -I/usr/include mainwindow.h -o moc_mainwindow.cpp
 
 compiler_moc_objc_header_make_all:
 compiler_moc_objc_header_clean:
@@ -439,7 +442,7 @@ uninstall_target: FORCE
 
 install_desktop_file: first FORCE
 	@test -d $(INSTALL_ROOT)/usr/share/applications/ || mkdir -p $(INSTALL_ROOT)/usr/share/applications/
-	$(QINSTALL) /home/by/Masaüstü/sifredegistir/sifredegistir.desktop $(INSTALL_ROOT)/usr/share/applications/sifredegistir.desktop
+	$(QINSTALL) /home/etapadmin/Masaüstü/sifredegistir/sifredegistir.desktop $(INSTALL_ROOT)/usr/share/applications/sifredegistir.desktop
 
 uninstall_desktop_file: FORCE
 	-$(DEL_FILE) -r $(INSTALL_ROOT)/usr/share/applications/sifredegistir.desktop
@@ -448,7 +451,7 @@ uninstall_desktop_file: FORCE
 
 install_icon: first FORCE
 	@test -d $(INSTALL_ROOT)/usr/share/icons || mkdir -p $(INSTALL_ROOT)/usr/share/icons
-	$(QINSTALL) /home/by/Masaüstü/sifredegistir/icons/password.svg $(INSTALL_ROOT)/usr/share/icons/password.svg
+	$(QINSTALL) /home/etapadmin/Masaüstü/sifredegistir/icons/password.svg $(INSTALL_ROOT)/usr/share/icons/password.svg
 
 uninstall_icon: FORCE
 	-$(DEL_FILE) -r $(INSTALL_ROOT)/usr/share/icons/password.svg
@@ -457,7 +460,7 @@ uninstall_icon: FORCE
 
 install_passwordyetki: first FORCE
 	@test -d $(INSTALL_ROOT)/usr/share/sifredegistir || mkdir -p $(INSTALL_ROOT)/usr/share/sifredegistir
-	$(QINSTALL_PROGRAM) /home/by/Masaüstü/sifredegistir/passwordyetki $(INSTALL_ROOT)/usr/share/sifredegistir/passwordyetki
+	$(QINSTALL_PROGRAM) /home/etapadmin/Masaüstü/sifredegistir/passwordyetki $(INSTALL_ROOT)/usr/share/sifredegistir/passwordyetki
 	-: $(INSTALL_ROOT)/usr/share/sifredegistir/passwordyetki
 
 uninstall_passwordyetki: FORCE
@@ -467,7 +470,7 @@ uninstall_passwordyetki: FORCE
 
 install_desktop_xdg: first FORCE
 	@test -d $(INSTALL_ROOT)/etc/xdg/autostart/ || mkdir -p $(INSTALL_ROOT)/etc/xdg/autostart/
-	$(QINSTALL_PROGRAM) /home/by/Masaüstü/sifredegistir/newpassword.desktop $(INSTALL_ROOT)/etc/xdg/autostart/newpassword.desktop
+	$(QINSTALL_PROGRAM) /home/etapadmin/Masaüstü/sifredegistir/newpassword.desktop $(INSTALL_ROOT)/etc/xdg/autostart/newpassword.desktop
 	-: $(INSTALL_ROOT)/etc/xdg/autostart/newpassword.desktop
 
 uninstall_desktop_xdg: FORCE
@@ -477,7 +480,7 @@ uninstall_desktop_xdg: FORCE
 
 install_desktop_xdg_link: first FORCE
 	@test -d $(INSTALL_ROOT)/usr/bin/ || mkdir -p $(INSTALL_ROOT)/usr/bin/
-	$(QINSTALL_PROGRAM) /home/by/Masaüstü/sifredegistir/newpassword.sh $(INSTALL_ROOT)/usr/bin/newpassword.sh
+	$(QINSTALL_PROGRAM) /home/etapadmin/Masaüstü/sifredegistir/newpassword.sh $(INSTALL_ROOT)/usr/bin/newpassword.sh
 	-: $(INSTALL_ROOT)/usr/bin/newpassword.sh
 
 uninstall_desktop_xdg_link: FORCE
