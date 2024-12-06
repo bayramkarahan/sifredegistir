@@ -103,7 +103,7 @@ MainWindow::MainWindow(QWidget *parent) :
             QString kmt="/usr/share/sifredegistir/passwordyetki "+username+" "+passwordLineEdit->text();
            // qDebug()<<kmt;
             system(kmt.toStdString().c_str());
-            QString kmt1="touch /home/"+username+".config/np";
+            QString kmt1="touch /home/"+username+"/.config/np";
            // qDebug()<<kmt1;
             system(kmt1.toStdString().c_str());
 
